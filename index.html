@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Product Card Grid</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grid-container">
+
+    <!-- Card 1 -->
+    <div class="product-card">
+      <span class="badge">Bestseller</span>
+      <span class="heart" onclick="toggleHeart(this)">♡</span>
+      <img src="https://m.media-amazon.com/images/I/71o8Q5XJS5L._AC_UL320_.jpg" alt="Galaxy Buds" class="product-image" />
+      <div class="product-info">
+        <h3 class="brand">Samsung</h3>
+        <p class="title">Galaxy Buds Live, True Wireless Earbuds</p>
+        <div class="rating">⭐⭐⭐⭐☆ <span class="review-count">(4,231)</span></div>
+        <div class="price"><span class="currency">₹</span><span class="amount">4,999</span></div>
+        <p class="shipping">FREE Delivery by Amazon</p>
+        <div class="buttons">
+          <button class="btn add">Add to Cart</button>
+          <button class="btn buy">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="product-card">
+      <span class="badge">Deal</span>
+      <span class="heart" onclick="toggleHeart(this)">♡</span>
+      <img src="https://m.media-amazon.com/images/I/41aF2VSt3qL._AC_UL320_.jpg" alt="Headphones" class="product-image" />
+      <div class="product-info">
+        <h3 class="brand">boAt</h3>
+        <p class="title">boAt Rockerz 450 Bluetooth On Ear Headphones</p>
+        <div class="rating">⭐⭐⭐⭐☆ <span class="review-count">(10,564)</span></div>
+        <div class="price"><span class="currency">₹</span><span class="amount">1,299</span></div>
+        <p class="shipping">Free Delivery by Amazon</p>
+        <div class="buttons">
+          <button class="btn add">Add to Cart</button>
+          <button class="btn buy">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="product-card">
+      <span class="badge">Limited</span>
+      <span class="heart" onclick="toggleHeart(this)">♡</span>
+      <img src="https://m.media-amazon.com/images/I/71y4knPZq8L._AC_UL320_.jpg" alt="Smartwatch" class="product-image" />
+      <div class="product-info">
+        <h3 class="brand">Noise</h3>
+        <p class="title">Noise ColorFit Ultra 3 Bluetooth Calling Smart Watch</p>
+        <div class="rating">⭐⭐⭐⭐⭐ <span class="review-count">(6,112)</span></div>
+        <div class="price"><span class="currency">₹</span><span class="amount">2,999</span></div>
+        <p class="shipping">FREE Delivery</p>
+        <div class="buttons">
+          <button class="btn add">Add to Cart</button>
+          <button class="btn buy">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleHeart(el) {
+      el.textContent = el.textContent === "♡" ? "❤️" : "♡";
+    }
+  </script>
+</body>
+</html>
